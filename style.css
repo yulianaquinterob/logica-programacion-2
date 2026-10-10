@@ -1,0 +1,113 @@
+:root{
+    --charcoal-blue: #264653ff;
+    --verdigris: #2a9d8fff;
+    --tuscan-sun: #e9c46aff;
+    --sandy-brown: #f4a261ff;
+    --burnt-peach: #e76f51ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: beige;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+header h1{
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: var(--tuscan-sun);
+    color: var(--charcoal-blue);
+    
+}
+#contenedor-formulario{
+    display: grid;
+    place-items: center;
+
+}
+
+#formulario {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-size: 1rem;
+    width: 50%;
+}
+#formulario label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+#formulario input{
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--charcoal-blue);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+#formulario input:focus{
+    outline: none;
+    border-color: var(--burnt-peach);
+}
+
+#contenedor-botones{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 10px;
+
+}
+
+#boton-convertir{
+    background: var(--burnt-peach);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+    width:50%;
+    margin-top: 10px;
+}
+#boton-convertir:hover{
+    background-color: var(--sandy-brown);
+}
+
+#boton-limpiar{
+    background: var(--verdigris);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+    width:50%;
+    margin-top: 10px;
+
+}
+
+#boton-limpiar:hover{
+    background-color: rgb(63, 243, 204);
+}
+
+#contenedor-resultado{
+    text-align: center;
+}
