@@ -2,6 +2,7 @@ const temperatura = document.getElementById('temperatura');
 const botonVerificar = document.getElementById('boton-convertir'); 
 const resultado = document.getElementById('resultado'); 
 
+
 botonVerificar.addEventListener('click', () => {
     const valorIngresado = temperatura.value;
 
